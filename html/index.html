@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="https://media.discordapp.net/attachments/1065442097731227728/1115171152957026364/2788demonshit.gif" type="image/gif">
+  <meta property="og:title" content="os crias"/>
+  <meta property="og:description" content="abusadinhos">   
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="snow-container"></div>
+  <audio autoplay src="/yt5s.com - Caio Luccas - WAR ⚔️💔 (Prod. Ayo Th) (128 kbps).mp3"></audio>
+  <div class="container">
+    <div class="sparkle"></div>
+  </div>
+  <div class="contener">
+    <form class="moscou">
+      <div class="badges">
+      <img id="icon" src="https://cdn.discordapp.com/avatars/1104464324656894025/efaf51adb618d8ddd22da3004f222b25.webp?size=80" alt="moscou">
+      <div class="badge">
+      <img src="https://i.pinimg.com/originals/ac/1b/a4/ac1ba465815c5e24e0276fa1a007d47d.png" width="15">
+      <img src="https://cdn3.emoji.gg/emojis/7011-active-developer-badge.png" width="15">
+      <img src="https://raw.githubusercontent.com/kauexz/badges/main/svg/discordnitro.svg" width="19">
+      <img src="https://cdn3.emoji.gg/emojis/4390-evolving-badge-nitro-1-months.png" width="19">
+    </div>
+    </div>
+      <h2>Moscou</h2>
+
+      <div class="redes">
+        <a href="https://www.instagram.com/eumaarcio/" target="_blank" rel="noopener noreferrer"><img src="https://i2.wp.com/www.multarte.com.br/wp-content/uploads/2019/03/logo-instagram-png-fundo-transparente.png?fit=696%2C696&ssl=1" width="30"></a>
+        <a href="https://discord.com/users/1104464324656894025" target="_blank" rel="noopener noreferrer"><img src="https://logodownload.org/wp-content/uploads/2017/11/discord-logo-1-1.png" width="30"></a>
+     </div>
+    </form>
+
+    <form class="blue">
+      <div class="banner"></div>
+      <img id="icon" src="https://cdn.discordapp.com/avatars/928492506113540096/c57144625ff67a06252a43bb3b50edf2.webp?size=80" alt="blue">
+      <div class="badge1">
+        <img src="https://i.pinimg.com/originals/cf/8e/c1/cf8ec1e2ad70ce6daccce0dcab67197e.png" width="15">
+        <img src="https://cdn3.emoji.gg/emojis/7011-active-developer-badge.png" width="15">
+        <img src="https://raw.githubusercontent.com/kauexz/badges/main/svg/discordnitro.svg" width="19">
+        <img src="https://cdn3.emoji.gg/emojis/5611-evolving-badge-nitro-15-months.png" width="19">
+      </div>
+      <h2>Bluezin</h2>
+
+      <div class="redes">
+        <a href="https://www.instagram.com/hey_marcos.iz/" target="_blank" rel="noopener noreferrer"><img src="https://i2.wp.com/www.multarte.com.br/wp-content/uploads/2019/03/logo-instagram-png-fundo-transparente.png?fit=696%2C696&ssl=1" width="30"></a>
+        <a href="https://discord.com/users/928492506113540096" target="_blank" rel="noopener noreferrer"><img src="https://logodownload.org/wp-content/uploads/2017/11/discord-logo-1-1.png" width="30"></a>
+       </div>
+    </form>
+  </div>
+
+  <script>
+    document.addEventListener('mousemove', function(e) {
+      var snowContainer = document.querySelector('.snow-container');
+      var snowflake = document.createElement('div');
+      snowflake.classList.add('snowflake');
+      snowContainer.appendChild(snowflake);
+    
+      var xPos = e.clientX - 5;
+      var yPos = e.clientY - 5; 
+      snowflake.style.left = xPos + 'px';
+      snowflake.style.top = yPos + 'px';
+    
+      setTimeout(function() {
+        snowflake.remove();
+      }, 1000);
+    });
+  </script>
+
+  <script>
+    var rev = "fwd";
+       function titlebar(val){
+           var msg  = "os abusadinhos";
+           var res = " ";
+           var speed = 100;
+           var pos = val;
+           msg = ""+msg+"";
+           var le = msg.length;
+           if(rev == "fwd"){
+               if(pos < le){
+                   pos = pos+1;
+                   scroll = msg.substr(0,pos);
+                   document.title = scroll;
+                   timer = window.setTimeout("titlebar("+pos+")",speed);
+               }
+               else {
+                   rev = "bwd";
+                   timer = window.setTimeout("titlebar("+pos+")",speed);
+               }
+           }
+           else {
+               if(pos > 0) {
+                   pos = pos-1;
+                   var ale = le-pos;
+                   scrol = msg.substr(ale,le);
+                   document.title = scrol;
+                   timer = window.setTimeout("titlebar("+pos+")",speed);
+               }
+               else {
+                   rev = "fwd";
+                   timer = window.setTimeout("titlebar("+pos+")",speed);
+               }
+           }
+       }
+       titlebar(0);
+       </script>
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="https://media.discordapp.net/attachments/1065442097731227728/1115171152957026364/2788demonshit.gif" type="image/gif">
+  <meta property="og:title" content="os crias"/>
+  <meta property="og:description" content="abusadinhos">   
+</head>
+<body>
+  <div class="background"></div>
+  <a href="/html/index.html">clique aqui</a>
+</body>
+
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    cursor: crosshair;
+  }
+  
+  .background {
+    width: 100%;
+    height: 100%;
+    background-image: url(https://i.pinimg.com/originals/ef/b0/6d/efb06dc68eb901f268743c33d7af363d.gif);
+    background-size: cover;
+    background-position: center;
+  }
+  
+  a {
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    cursor: crosshair;
+  }
+</style>
+
+<script>
+  var rev = "fwd";
+     function titlebar(val){
+         var msg  = "os abusadinhos";
+         var res = "";
+         var speed = 100;
+         var pos = val;
+         msg = ""+msg+"";
+         var le = msg.length;
+         if(rev == "fwd"){
+             if(pos < le){
+                 pos = pos+1;
+                 scroll = msg.substr(0,pos);
+                 document.title = scroll;
+                 timer = window.setTimeout("titlebar("+pos+")",speed);
+             }
+             else {
+                 rev = "bwd";
+                 timer = window.setTimeout("titlebar("+pos+")",speed);
+             }
+         }
+         else {
+             if(pos > 0) {
+                 pos = pos-1;
+                 var ale = le-pos;
+                 scrol = msg.substr(ale,le);
+                 document.title = scrol;
+                 timer = window.setTimeout("titlebar("+pos+")",speed);
+             }
+             else {
+                 rev = "fwd";
+                 timer = window.setTimeout("titlebar("+pos+")",speed);
+             }
+         }
+     }
+     titlebar(0);
+     </script>
+</html>
